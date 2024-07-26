@@ -1,0 +1,42 @@
+<%- include("components/Header.ejs")%>
+<%- include("components/Navbar.ejs")%>
+<div class="container my-5">
+  <div class="jumbotron text-center">
+    <h3 class="display-4">Welcome to BlogWEB!</h3>
+    <p class="lead">
+      Your go-to source for insights, stories, and trends across various topics.
+    </p>
+    <a class="btn btn-primary" href="/categories" role="button"
+      >Explore Categories</a
+    >
+  </div>
+  <h2 class="text-center my-4">Featured Articles</h2>
+  <div class="row">
+    <% homeBlogs.forEach((entry) => { %>
+    <div class="col-md-4 mb-3">
+      <div class="card">
+        <img
+          src="<%= entry.image %>"
+          class="card-img-top"
+          alt="<%= entry.title %>"
+        />
+        <div class="card-body">
+          <h5 class="card-title"><%= entry.title %></h5>
+          <p class="card-text"><%= entry.info %></p>
+          <a href="<%= entry.link %>" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+    <% }) %>
+  </div>
+
+  <div class="text-center my-5">
+    <h2>Join Our Community</h2>
+    <p>
+      Subscribe to our newsletter for the latest updates and exclusive content!
+    </p>
+    <a href="#" class="btn btn-success">Subscribe Now</a>
+  </div>
+</div>
+
+<%- include("components/Footer.ejs")%>

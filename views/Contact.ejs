@@ -1,11 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-</head>
-<body>
-    <h3>Contact our team</h3>
-</body>
-</html>
+<%- include("components/Header.ejs")%> <%- include("components/Navbar.ejs")%>
+<div class="container my-5">
+    <div class="card w-100 mx-auto my-3">
+      <div class="card-body">
+        <h3 class="card-title text-center">Contact Us</h3>
+        <hr />
+        <p class="card-text">
+          We would love to hear from you! Whether you have questions, feedback, or
+          just want to say hello, feel free to reach out to us.
+        </p>
+  
+        <h5 class="mt-4">Get in Touch</h5>
+        <p class="card-text">You can contact us via email at:</p>
+        <p class="card-text">
+          <strong><a href="mailto:info@example.com">info@example.com</a></strong>
+        </p>
+  
+        <h5 class="mt-4">Follow Us</h5>
+        <p class="card-text">
+          Stay updated with our latest news and posts by following us on social
+          media!
+        </p>
+  
+        <div class="mt-4 text-center">
+          <a href="#" class="btn btn-primary">Follow Us on Facebook</a>
+          <a href="#" class="btn btn-info">Follow Us on Twitter</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<%- include("components/Footer.ejs")%>
+
+

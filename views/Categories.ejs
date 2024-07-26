@@ -1,0 +1,31 @@
+<%- include("components/Header.ejs")%> <%- include("components/Navbar.ejs")%>
+<div class="container my-5">
+  <div class="card w-100 mx-auto my-2">
+    <div class="card-body">
+      <h3 class="card-title text-center">Categories</h3>
+      <p class="card-text text-center">
+        Explore our diverse range of categories. Find articles that interest you
+        the most!
+      </p>
+
+      <div class="row mt-4">
+        <% blogCategories.forEach((entry) => { %>
+        <div class="col-md-4 mb-3">
+          <div class="card text-center">
+            <img src="<%= entry.img %>" alt="<%= entry.category %>" />
+            <div class="card-body">
+              <h5 class="card-title"><%= entry.category %></h5>
+              <p class="card-text"><%= entry.description %></p>
+              <a href="/category/<%= entry.slug %>" class="btn btn-primary"
+                >Explore</a
+              >
+            </div>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include("components/Footer.ejs")%>

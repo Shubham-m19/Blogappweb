@@ -1,11 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-</head>
-<body>
-    <h3>Information about us</h3>
-</body>
-</html>
+<%- include("components/Header.ejs") %> <%- include("components/Navbar.ejs") %>
+<div class="container my-5">
+    <div class="card w-100 mx-auto my-3">
+      <div class="card-body">
+        <h3 class="card-title text-center">About Us</h3>
+        <hr />
+        <p class="card-text">
+          Welcome to our blog! We are passionate about sharing insights, stories,
+          and knowledge across various topics that inspire, educate, and
+          entertain. Our team consists of dedicated writers and creators who are
+          committed to delivering high-quality content that resonates with our
+          readers.
+        </p>
+  
+        <h5 class="mt-4">Our Mission</h5>
+        <p class="card-text">
+          Our mission is to foster a vibrant community of learners and thinkers by
+          providing diverse content that sparks curiosity and encourages
+          exploration.
+        </p>
+  
+        <h5 class="mt-4">What We Offer</h5>
+        <ul class="list-unstyled">
+          <li>
+            <strong>Informative Articles:</strong> In-depth explorations of
+            trending topics and timeless issues.
+          </li>
+          <li>
+            <strong>Personal Stories:</strong> Authentic narratives from our
+            writers and guest contributors that connect on a personal level.
+          </li>
+          <li>
+            <strong>Guides and Tips:</strong> Practical advice to help you
+            navigate everyday challenges and make informed decisions.
+          </li>
+        </ul>
+  
+        <h5 class="mt-4">Join Us</h5>
+        <p class="card-text">
+          We invite you to engage with our content, share your thoughts, and
+          become part of our growing community. Follow us on social media and
+          subscribe to our newsletter for the latest updates and exclusive
+          content!
+        </p>
+  
+        <div class="text-center mt-4">
+          <a href="#" class="btn btn-primary">Subscribe Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<%- include("components/Footer.ejs") %>

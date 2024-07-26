@@ -1,0 +1,28 @@
+<%- include("components/Header.ejs") %> <%- include("components/Navbar.ejs") %>
+
+<div class="container my-5">
+  <h3 class="text-center">Explore <%= category.category %> Blogs</h3>
+  <h4 class="mt-5"><%= category.description %></h4>
+
+  <div class="row mt-4">
+    <% blogs.forEach(blog => { %>
+    <div class="col-md-6 mb-3">
+      <div class="card">
+        <img
+          src="<%= blog.img %>"
+          class="card-img-top"
+          alt="<%= blog.title %>"
+          width="500px"
+          height="300px"
+        />
+        <div class="card-body">
+          <h5 class="card-title"><%= blog.title %></h5>
+          <p class="card-text"><%= blog.content %></p>
+        </div>
+      </div>
+    </div>
+    <% }); %>
+  </div>
+</div>
+
+<%- include("components/Footer.ejs") %>
